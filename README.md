@@ -113,3 +113,49 @@ func saudacao(nome string) {
 go
 
 saudacao("Maria")
+
+
+3. Estruturas de Dados: Guia Passo a Passo
+Projeto: Gerenciador de Tarefas (To-Do List)
+Passo 1: Arrays e Slices
+
+    Definindo um Array: Em Go, um array é uma coleção ordenada de elementos do mesmo tipo. Por exemplo, um array de strings:
+
+go
+
+var tarefas [5]string
+
+    Definindo um Slice: Um slice é semelhante a um array, mas seu tamanho é dinâmico. Para criar um slice:
+
+go
+
+var listaTarefas []string
+
+    Adicionando Itens ao Slice: Você pode adicionar itens a um slice usando a função append:
+
+go
+
+listaTarefas = append(listaTarefas, "Comprar pão")
+
+#### Passo 2: Mapas
+1. **Definindo um Mapa:** Um mapa é uma coleção de pares chave-valor. Por exemplo, um mapa para rastrear o status das tarefas:
+```go
+var statusTarefas map[string]string
+statusTarefas = make(map[string]string)
+
+    Adicionando e Acessando Itens: Você pode adicionar itens a um mapa e acessá-los usando chaves:
+
+go
+
+statusTarefas["Comprar pão"] = "pendente"
+status := statusTarefas["Comprar pão"]
+
+Passo 3: Manipulação de Strings
+
+    Concatenando Strings: Em Go, você pode concatenar strings simplesmente usando o operador +:
+
+go
+
+mensagem := "Tarefa: " + "Comprar pão"
+
+    Outras Operações: O pacote strings em Go fornece muitas funções úteis para manipular strings, como ToUpper, ToLower, Trim, etc.
